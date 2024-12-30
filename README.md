@@ -1,23 +1,47 @@
-# Calorie_Burnt_Prediction_XGBoost_Regression
+# Calorie Burnt Prediction using XGBoost Regression
 
-Workflow for implementation :
+## Project Overview
+This project focuses on predicting the number of calories burnt during physical activities using the **XGBoost Regression** algorithm. By analyzing features such as age, gender, height, weight, and activity duration, the model provides accurate predictions for calorie expenditure.
 
-Data Collection
-Data Pre Processing
-Data Analysis
-Train Test Split
-Train ML model 
-Evaluation 
+## Objectives
+- Explore and preprocess the dataset for effective feature engineering.
+- Train and evaluate the XGBoost Regression model for calorie prediction.
+- Compare the performance of XGBoost Regression with other regression algorithms.
+
+## Dataset
+The dataset includes the following features:
+- **Age**: Age of the individual.
+- **Gender**: Male/Female classification.
+- **Height**: Height in centimeters.
+- **Weight**: Weight in kilograms.
+- **Duration**: Duration of physical activity in minutes.
+- **Heart Rate**: Average heart rate during the activity.
+- **Calories Burnt**: The target variable representing calories burnt during the activity.
+
+*Note*: Ensure proper handling of confidential data and cite the source of the dataset if publicly available.
+
+## Features
+The project includes:
+- **Data Preprocessing**: Handling missing values, encoding categorical variables, and scaling numeric features.
+- **Exploratory Data Analysis (EDA)**: Visualizing relationships between features and calorie expenditure.
+- **Model Training**: Implementing and optimizing the XGBoost Regression algorithm.
+- **Performance Evaluation**: Evaluating the model's performance using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared.
+
+## Repository Structure
+The repository contains the following files:
+- `Calorie Count Prediction.ipynb`: Jupyter Notebook containing the complete analysis and model implementation.
+- `data/`: Directory for the dataset (if included).
+- `README.md`: Project overview and documentation.
+
+## Requirements
+To replicate the analysis, ensure you have the following dependencies installed:
+- Python 3.x
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- Matplotlib
+- Seaborn
 
 
-Model used - XGBoost Regression
-
-
-The results of the regression problems are continuous or real values. Some commonly used regression algorithms are Linear Regression and Decision Trees. There are several metrics involved in regression like root-mean-squared error (RMSE) and mean-squared-error (MAE). These are some key members of XGBoost models, each plays an important role.
-
-RMSE: It is the square root of mean squared error (MSE).
-MAE: It is an absolute sum of actual and predicted differences, but it lacks mathematically, that’s why it is rarely used, as compared to other metrics.
-XGBoost is a powerful approach for building supervised regression models. The validity of this statement can be inferred by knowing about its (XGBoost) objective function and base learners. The objective function contains loss function and a regularization term. It tells about the difference between actual values and predicted values, i.e how far the model results are from the real values. The most common loss functions in XGBoost for regression problems is reg:linear, and that for binary classification is reg:logistics. Ensemble learning involves training and combining individual models (known as base learners) to get a single prediction, and XGBoost is one of the ensemble learning methods. XGBoost expects to have the base learners which are uniformly bad at the remainder so that when all the predictions are combined, bad predictions cancels out and better one sums up to form final good predictions
-
-
-https://www.analyticsvidhya.com/blog/2018/09/an-end-to-end-guide-to-understand-the-math-behind-xgboost/
